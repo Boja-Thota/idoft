@@ -20,6 +20,9 @@ jobs:
     steps:
       - name: Initialize Git
         run: git init
+      - name: Go to Home
+        run: cd ~
+        
       - name: Git Clone
         run: git clone https://github.com/apache/jackrabbit-oak
       
