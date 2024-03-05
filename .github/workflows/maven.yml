@@ -30,6 +30,19 @@ jobs:
 
     - name: Install Maven
       run: sudo apt-get install -y maven
+    
+    - name: Git Clone
+      run: git clone https://github.com/apache/jackrabbit-oak
+
+    - name: Change Directory
+      run: cd jackrabbit-oak/
+      
+    - name: Get Latest Commit
+      run: git rev-parse HEAD
+      
+    - name: Checkout Specific Commit
+      run: git checkout 4e92b7d8703be8a46754710971012af8b2f8a6bb
+
       
     - name: Build Project (Skip Tests)
       run: mvn clean install -DskipTests -pl oak-auth-ldap -am
