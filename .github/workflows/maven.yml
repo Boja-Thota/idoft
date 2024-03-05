@@ -34,7 +34,9 @@ jobs:
     - name: Change Directory
       run: cd jackrabbit-oak/
       
-
+    - name: Fetch All Changes
+      run: git fetch
+    
     - name: Checkout Specific Commit
       run: git checkout 4e92b7d8703be8a46754710971012af8b2f8a6bb
 
