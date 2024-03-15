@@ -20,6 +20,9 @@ jobs:
     steps:
       - name: Go to Home
         run: cd ~
+
+      - name: PWD
+      - run: pwd
         
       - name: Git Clone
         run: git clone https://github.com/apache/jackrabbit-oak
