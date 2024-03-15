@@ -18,8 +18,6 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Initialize Git
-        run: git init
       - name: Go to Home
         run: cd ~
         
@@ -33,7 +31,7 @@ jobs:
         run: git fetch --all
         
       - name: Git Checkout
-        run: git checkout 4e92b7d8703be8a46754710971012af8b2f8a6bb
+        run: git checkout 0440e096dc7a460d206c77a5f178796db31a0ef4
         
       - name: Setup Java
         uses: actions/setup-java@v3
