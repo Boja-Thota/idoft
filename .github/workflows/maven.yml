@@ -22,7 +22,7 @@ jobs:
         run: cd ~
 
       - name: PWD
-      - run: pwd
+        run: pwd
         
       - name: Git Clone
         run: git clone https://github.com/apache/jackrabbit-oak
