@@ -25,7 +25,7 @@ jobs:
         run: git clone https://github.com/apache/jackrabbit-oak
       
       - name: Change Directory
-        run: cd jackrabbit-oak
+        run: cd ~/jackrabbit-oak
 
       - name: LS
         run: pwd
